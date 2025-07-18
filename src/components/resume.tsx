@@ -8,13 +8,14 @@ import Image from 'next/image';
 export function Resume() {
   // Resume details
   const resumeDetails = {
-    title: "Raphael's Resume",
-    description: 'Full Stack Developer • AI Specialist',
+    title: "Vatsal's Resume",
+    description:
+      'Full Stack Developer • Software Engineer • Cloud and DevOps Engineer',
     fileType: 'PDF',
-    lastUpdated: 'March 2025',
+    lastUpdated: 'July 2025',
     fileSize: '0.5 MB',
-    previewImageSrc: '/resume_giraud_preview.png',
-    downloadUrl: '/resume_giraud.pdf',
+    previewImageSrc: '/resume_vatsal_preview.png',
+    downloadUrl: '/resume_vatsal.pdf',
   };
 
   const handleDownload = () => {
@@ -31,7 +32,7 @@ export function Resume() {
     <div className="mx-auto w-full py-8 font-sans">
       <motion.div
         onClick={handleDownload}
-        className="group relative cursor-pointer overflow-hidden rounded-xl bg-accent p-0 transition-all duration-300"
+        className="group bg-accent relative cursor-pointer overflow-hidden rounded-xl p-0 transition-all duration-300"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.0, ease: 'easeOut' }}
@@ -41,13 +42,13 @@ export function Resume() {
         <div className="p-5">
           <div className="flex items-center justify-between">
             <div>
-              <h3 className="text-lg font-medium text-foreground">
+              <h3 className="text-foreground text-lg font-medium">
                 {resumeDetails.title}
               </h3>
-              <p className="text-sm text-muted-foreground">
+              <p className="text-muted-foreground text-sm">
                 {resumeDetails.description}
               </p>
-              <div className="mt-1 flex text-xs text-muted-foreground">
+              <div className="text-muted-foreground mt-1 flex text-xs">
                 <span>{resumeDetails.fileType}</span>
                 <span className="mx-2">•</span>
                 <span>Updated {resumeDetails.lastUpdated}</span>
@@ -58,7 +59,7 @@ export function Resume() {
 
             {/* Download indicator */}
             <motion.div
-              className="flex h-10 w-10 items-center justify-center rounded-full bg-black text-primary-foreground group-hover:bg-black/80"
+              className="text-primary-foreground flex h-10 w-10 items-center justify-center rounded-full bg-black group-hover:bg-black/80"
               initial={{ scale: 1 }}
             >
               <Download className="h-5 w-5" />

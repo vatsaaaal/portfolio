@@ -69,7 +69,7 @@ export default function WelcomeModal({ trigger }: WelcomeModalProps) {
             <DialogHeader className="relative flex flex-row items-start justify-between px-8 pt-8 pb-6">
               <div>
                 <DialogTitle className="flex items-center gap-2 text-4xl font-bold tracking-tight">
-                  Welcome to AI Portfolio
+                  Welcome to Vatsal's Portfolio
                 </DialogTitle>
                 <DialogDescription className="mt-2 text-base">
                   {/*My interactive AI portfolio experience*/}
@@ -92,28 +92,25 @@ export default function WelcomeModal({ trigger }: WelcomeModalProps) {
                 {/* What section */}
                 <div className="space-y-3">
                   <h3 className="text-primary flex items-center gap-2 text-xl font-semibold">
-                    What's ????
+                    What's This?
                   </h3>
                   <p className="text-accent-foreground text-base leading-relaxed">
-                    I'm so excited to present my{' '}
-                    <strong>brand new AI Portfolio.</strong>
-                    <br /> Whether you're a recruiter, a friend, family member,
-                    or just curious, feel free to ask anything you want!
+                    I'm excited to present my{' '}
+                    <strong>AI Portfolio</strong> as a Full Stack Developer.
+                    <br /> Whether you're a recruiter, colleague, or just curious, explore my work and ask anything!
                   </p>
                 </div>
 
                 {/* Why section */}
                 <div className="space-y-3">
                   <h3 className="text-primary flex items-center gap-2 text-xl font-semibold">
-                    Why ???
+                    Why This?
                   </h3>
                   <p className="text-accent-foreground text-base leading-relaxed">
-                    Traditional portfolios can be limiting. <br /> They can't
-                    adapt to every visitor's specific needs. <br /> My portfolio
-                    becomes{' '}
+                    Traditional portfolios are static. <br /> Mine adapts to show my skills in software engineering, full-stack development, and more. <br />
+                    It highlights{' '}
                     <strong>
-                      exactly what you're interested in knowing about me and my
-                      work.
+                      exactly what interests you about my experience.
                     </strong>
                   </p>
                 </div>

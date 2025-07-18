@@ -7,34 +7,13 @@ import { ChevronRight } from 'lucide-react';
 export function Contact() {
   // Contact information
   const contactInfo = {
-    name: 'Raphael Giraud',
-    email: 'raphaelgiraud12@gmail.com',
-    handle: '@Raphael.Giraud',
+    name: 'Vatsal Jain',
+    email: 'jainvatsalxii@gmail.com',
+    handle: '@vatsaljain1',
     socials: [
-      {
-        name: 'LinkedIn',
-        url: 'https://www.linkedin.com/in/raphael-giraud-60939519a/',
-      },
-      {
-        name: 'Youtube',
-        url: 'https://www.youtube.com/@toukoum',
-      },
-      {
-        name: 'Instagram',
-        url: 'https://www.instagram.com/raphael.giraud/',
-      },
-      {
-        name: 'Discord',
-        url: 'https://discord.com/users/toukoum',
-      },
-      {
-        name: 'Github',
-        url: 'https://github.com/toukoum',
-      },
-      {
-        name: 'X',
-        url: 'https://x.com/toukoumcode',
-      },
+      { name: 'LinkedIn', url: 'https://www.linkedin.com/in/vatsaljain1/' },
+      { name: 'GitHub', url: 'https://github.com/vatsaaaal' },
+      { name: 'Devpost', url: 'https://devpost.com/vatsaaaal' },
     ],
   };
 
@@ -51,9 +30,7 @@ export function Contact() {
           <h2 className="text-foreground text-3xl font-semibold md:text-4xl">
             Contacts
           </h2>
-          <span className="mt-2 sm:mt-0">
-            {contactInfo.handle}
-          </span>
+          <span className="mt-2 sm:mt-0">{contactInfo.handle}</span>
         </div>
 
         {/* Email Section */}

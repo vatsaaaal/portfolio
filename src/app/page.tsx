@@ -88,33 +88,8 @@ export default function Home() {
           className="hidden bg-gradient-to-b from-neutral-500/10 to-neutral-500/0 bg-clip-text text-[10rem] leading-none font-black text-transparent select-none sm:block lg:text-[16rem]"
           style={{ marginBottom: '-2.5rem' }}
         >
-          Toukoum
+          Vatsal
         </div>
-      </div>
-
-      {/* GitHub button */}
-      <div className="absolute top-6 right-8 z-20">
-        <GithubButton
-          //targetStars={68}
-          animationDuration={1.5}
-          label="Star"
-          size={'sm'}
-          repoUrl="https://github.com/toukoum/portfolio"
-        />
-      </div>
-
-      <div className="absolute top-6 left-6 z-20">
-        <button
-          onClick={() => goToChat('Are you looking for an internship?')}
-          className="relative flex cursor-pointer items-center gap-2 rounded-full border bg-white/30 px-4 py-1.5 text-sm font-medium text-black shadow-md backdrop-blur-lg transition hover:bg-white/60 dark:border-white dark:text-white dark:hover:bg-neutral-800"
-        >
-          {/* Green pulse dot */}
-          <span className="relative flex h-2 w-2">
-            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75"></span>
-            <span className="relative inline-flex h-2 w-2 rounded-full bg-green-500"></span>
-          </span>
-          Looking for a talent?
-        </button>
       </div>
 
       {/* header */}
@@ -132,7 +107,7 @@ export default function Home() {
           Hey, I'm Vatsal 👋
         </h2>
         <h1 className="text-4xl font-bold sm:text-5xl md:text-6xl lg:text-7xl">
-          AI portfolio
+          Full Stack Developer
         </h1>
       </motion.div>
 

@@ -7,332 +7,73 @@ import { url } from 'inspector';
 // Enhanced project content array with all projects
 const PROJECT_CONTENT = [
   {
-    title: 'Synto',
+    title: 'Jaisohn Patient Portal',
     description:
-      'Synto is an AI-powered interface that transforms complex blockchain interactions into simple, natural language commands. Whether you want to send tokens, stake assets, swap coins, or even create NFTs or liquidity pools, just tell Synto what to do — no manual wallet interactions, no technical jargon. One of my biggest projects yet',
+      'Developed a modernized web platform for the Philip Jaisohn Memorial Foundation, a nonprofit serving the elderly Asian community in the U.S. The platform improves donation processing, accessibility, and user engagement while maintaining a simple, easy-to-use interface. Integrated an AI-powered chatbot using Amazon Lex and SageMaker.',
+    techStack: ['Django', 'HTML', 'AWS (EC2, S3)', 'Amazon Lex', 'SageMaker'],
+    date: 'Jan 2025 - Present',
+    links: [{ name: 'website', url: 'https://jaisohn.org/' }],
+    images: [
+      { src: '/jaisohn1.png', alt: 'Jaisohn landing page' },
+      { src: '/jaisohn2.png', alt: 'Jaisohn portal interface' },
+    ],
+  },
+  {
+    title: "Dragon's Craigslist - Drexel Student Marketplace",
+    description:
+      'Built a Craigslist-style marketplace exclusively for Drexel students to buy, sell, and trade course materials, lab equipment, laptops, furniture, and other student essentials. Implemented secure login, real-time messaging, and a listing approval system.',
+    techStack: ['React', 'Node.js', 'PostgreSQL', 'Socket.io'],
+    date: 'Aug 2024 - Dec 2024',
+    links: [{ name: 'website', url: 'https://dragon-craigslist.vercel.app/' }],
+    images: [
+      { src: '/dragons1.png', alt: 'Marketplace landing page' },
+      { src: '/dragons2.png', alt: 'Listing page' },
+    ],
+  },
+  {
+    title: 'PoolTogether - Rideshare Carpooling App',
+    description:
+      'Created a carpooling platform that connects travelers heading to the same destination or nearby locations. Allows users to post trips, join rides, chat, and split costs. Inspired by expensive airport-to-campus commutes.',
+    techStack: ['Vite', 'React', 'Node.js', 'WebSockets', 'MongoDB', 'JWT'],
+    date: '2024 - Present',
+    links: [
+      { name: 'website', url: 'https://dragon-rideshare.vatsaljain.lol/' },
+    ],
+    images: [{ src: '/pool1.png', alt: 'Rideshare app interface' }],
+  },
+  {
+    title: 'Hackathon Projects: Donator Pro / Farmer Hub',
+    description:
+      'Donator Pro: Web platform connecting donors to centers with real-time inventory and impact metrics. Farmer Hub: AI-driven tools for crop disease detection and recommendations using MobileNetV2 and Leaflet maps.',
+    techStack: ['Flask', 'React', 'TensorFlow.js', 'Leaflet', 'Postman'],
+    date: 'Mar 2023 - Sep 2023',
+    links: [{ name: 'devpost', url: 'https://devpost.com/vatsaaaal' }],
+    images: [
+      { src: '/hackathon1.png', alt: 'Donator Pro interface' },
+      { src: '/hackathon2.png', alt: 'Farmer Hub map' },
+    ],
+  },
+  {
+    title: 'Twitch Translate - Real-Time Chat Translation Extension',
+    description:
+      'Developing a Twitch extension that translates chat messages in real time, enabling multilingual engagement. Integrated with Twitch API and translation models.',
+    techStack: ['JavaScript', 'Twitch API', 'Translation Models'],
+    date: 'Feb 2025 - Present',
+    images: [{ src: '/twitch1.png', alt: 'Twitch chat extension' }],
+  },
+  {
+    title: 'On-Campus Jobs Portal',
+    description:
+      'Developed a scalable on-campus job portal with role-based permissions, authentication, dynamic search, and RESTful APIs.',
     techStack: [
-      'Next.js',
-      'TailwindCSS',
-      'Web3.js',
-      'shadcn-ui',
-      'TypeScript',
-      'Phantom Wallet',
-      'OpenAI API',
-      'Vercel AI SDK',
-      'Solana Agent kit',
-      'Neon',
-      'Prisma'
+      'Django',
+      'HTML/CSS',
+      'JavaScript',
+      'Django REST Framework',
+      'PostgreSQL',
     ],
-    date: '2025',
-    links: [
-      {
-        name: 'website',
-        url: 'https://synto.fun',
-      },
-      {
-        name: 'Launch Video',
-        url: 'https://www.youtube.com/watch?v=4QUE2KgKDUw',
-      },
-      {
-        name: 'X',
-        url: 'https://x.com/chainSynto',
-      },
-      {
-        name: 'Technical Video',
-        url: 'https://www.youtube.com/watch?v=1CjBLKPUwtA&feature=youtu.be',
-      },
-      {
-        name: 'Pitch Deck',
-        url: 'https://drive.google.com/file/d/1B3m44mEgv81rJHfjNfTKi147yX4raQed/view?usp=sharing',
-      },
-      {
-        name: 'Usage tutorial',
-        url: 'https://www.youtube.com/watch?v=PRu1cfvT2bA',
-      }
-    ],
-    images: [
-      {
-        src: '/synto1.png',
-        alt: 'Synto landing page',
-      },
-      {
-        src: '/synto2.png',
-        alt: 'Synto chat interface',
-      },
-      {
-        src: '/synto3.png',
-        alt: 'Synto chat interface',
-      },
-      {
-        src: '/synto4.png',
-        alt: 'Synto chat interface',
-      },
-      {
-        src: '/synto5.png',
-        alt: 'Synto chat interface',
-      },
-      {
-        src: '/synto6.png',
-        alt: 'Synto chat interface',
-      },
-    ],
-  },
-  {
-    title: 'Rrate',
-    description:
-      "Rrate is a fun website to allow user to compare his salary with the richest people in the world. Try it now it's online!",
-    techStack: ['Html', 'Css', 'Javascript'],
-    date: '2024',
-    links: [
-      {
-        name: 'website',
-        url: 'https://rrate.app',
-      },
-      {
-        name: 'github',
-        url: 'https://github.com/toukoum/Rrate',
-      },
-    ],
-    images: [
-      {
-        src: '/rrate1.png',
-        alt: 'Rrate landing page',
-      },
-      {
-        src: '/rrate2.png',
-        alt: 'Rrate comparison page',
-      },
-      {
-        src: '/rrate3.png',
-        alt: 'Rrate comparison page',
-      },
-    ],
-  },
-  {
-    title: 'Defai',
-    description:
-      "We Win ETHOXford hackathon by building DEFAI. DEFAI stands for Decentralized Finance Artificial Intelligence. It's an AI-powered chat interface that simplifies on-chain operations on the Avalanche blockchain by allowing users to interact using natural language. This makes complex DeFi operations accessible even for those with limited technical expertise.",
-    techStack: [
-      'Next.js',
-      'TailwindCSS',
-      'shadcn-ui',
-      'Vercel AI SDK',
-      'TypeScript',
-    ],
-    date: '2025',
-    links: [
-      {
-        name: 'website',
-        url: 'https://dorahacks.io/buidl/22605',
-      },
-      {
-        name: 'github',
-        url: 'https://github.com/toukoum/DEFAI',
-      },
-      {
-        name: 'LinkedIn',
-        url: 'https://www.linkedin.com/feed/update/urn:li:activity:7299337190151483392/',
-      },
-      {
-        name: 'Youtube Video',
-        url: 'https://www.youtube.com/watch?v=N9O7los4-ng&t=34s&ab_channel=Toukoum',
-      }
-    ],
-    images: [
-      {
-        src: '/defai1.png',
-        alt: 'Landing Page of Defai',
-      },
-      {
-        src: '/defai2.png',
-        alt: 'Confirmation popup of Defai',
-      },
-      {
-        src: '/defai3.png',
-        alt: 'Chatbot of Defai',
-      },
-      {
-        src: '/defai4.jpeg',
-        alt: 'Winner team',
-      },
-    ],
-  },
-  {
-    title: 'Fitgear',
-    description:
-      'Won the Gotta Go Hack IA by building Fitgear, a virtual voice seller accessible by QR code to improve the ratio between customers and sellers. Created an AI pipeline with API calls and a RAG system for natural language interactions.',
-    techStack: ['Next.js', 'TailwindCSS', 'OpenAI API', 'Langchain'],
-    date: '2024',
-    links: [
-      {
-        name: 'Linkedin',
-        url: 'https://www.linkedin.com/posts/raphael-giraud-60939519a_hackathon-innovation-sporttech-activity-7210399263774674946-qSXq?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAC6vwikBVSEkS7XWktWS7y6GR3GHwAlKslc',
-      },
-    ],
-    images: [
-      {
-        src: '/fitgear2.png',
-        alt: 'Fitgear chatbot',
-      },
-      {
-        src: '/fitgear1.png',
-        alt: 'Fitgear landing page',
-      },
-    ],
-  },
-  {
-    title: 'Datai',
-    description:
-      "DATAI is an AI-powered agent that lets non-technical users query a database using natural language without writing SQL. Built using Next.js, TailwindCSS, shadcn-ui, and Anthropic's Claude API, this project focuses on simplicity, speed, and user-friendly design.",
-    techStack: [
-      'Next.js',
-      'TailwindCSS',
-      'shadcn-ui',
-      'Claude API',
-      'TypeScript',
-    ],
-    date: '2024',
-    links: [
-      {
-        name: 'GitHub',
-        url: 'https://github.com/toukoum/datai',
-      },
-      {
-        name: 'Youtube Video Demo',
-        url: 'https://youtu.be/iE0RXjdbQsw',
-      }
-    ],
-    images: [
-      {
-        src: '/datai1.png',
-        alt: 'Datai landing page',
-      },
-      {
-        src: '/datai2.png',
-        alt: 'Datai chatbot',
-      },
-      {
-        src: '/datai3.png',
-        alt: 'Datai chatbot',
-      },
-      {
-        src: '/datai4.png',
-        alt: 'Datai chatbot',
-      }
-    ],
-  },
-  {
-    title: '3d Pong Game',
-    description:
-      "Transcendance is the final project of my 42 cursus. It's a 3D pong game with multiplayer capabilities, user authentication, and real-time gameplay. We had to do everything from scratch, so it was pretty challenging and we learned a lot.",
-    techStack: ['Django', 'Python', 'JavaScript', 'Websockets', 'PostgreSQL', 'Docker', 'Nginx', 'Web3', 'Solidity'],
-    date: '2023',
-    links: [
-      {
-        name: 'GitHub',
-        url: 'https://github.com/toukoum/Transcendance',
-      },
-    ],
-    images: [
-      {
-        src: '/trans1.png',
-        alt: 'Transcendance landing page',
-      },
-      {
-        src: '/trans2.png',
-        alt: 'Transcendance game',
-      },
-      {
-        src: '/trans3.png',
-        alt: 'Transcendance game',
-      },
-      {
-        src: '/trans4.png',
-        alt: 'Transcendance game',
-      },
-      {
-        src: '/trans5.png',
-        alt: 'Transcendance game',
-      },
-      {
-        src: '/trans6.png',
-        alt: 'Transcendance game',
-      }
-
-    ],
-  },
-  {
-    title: 'Minishell',
-    description:
-      "Minishell is a project that aims to create a simple shell. It's a great introduction to process creation and management in C, offering fundamental Unix command-line functionality. This was a very challenging project, but I learned a lot from it.",
-    techStack: ['C', 'Unix', 'Bash'],
-    date: '2023',
-    links: [
-      {
-        name: 'GitHub',
-        url: 'https://github.com/toukoum/Michelle-42',
-      },
-    ],
-    images: [
-      {
-        src: '/minishell1.png',
-        alt: 'Minishell landing page',
-      }
-    ],
-  },
-  {
-    title: 'YouBot',
-    description:
-      'YouBot is a Python Bot that Scrapes Videos from Pexels, adds a random song from a Songs Folder, then auto-uploads the videos to your YouTube Channel for continuous content generation.',
-    techStack: ['Python', 'YouTube API', 'Pexels API'],
-    date: '2022',
-    links: [
-      {
-        name: "YouTube Video",
-        url: "https://youtu.be/vp1v5mBG7rA "
-      },
-      {
-        name: 'GitHub',
-        url: 'https://github.com/toukoum/YouBot',
-      }
-    ],
-    images: [
-      {
-        src: '/youbot1.jpg',
-        alt: 'Youbot landing page',
-      },
-      {
-        src: '/youbot2.png',
-        alt: 'Youbot chatbot',
-      },
-    ],
-  },
-  {
-    title: 'Old Portfolio',
-    description:
-      'My previous traditional portfolio built with vanilla HTML, CSS and JS with GSAP animations for a smooth and interactive user experience.',
-    techStack: ['HTML', 'CSS', 'JavaScript', 'GSAP'],
-    date: '2022',
-    links: [
-      {
-        name: 'Website',
-        url: 'https://toukoum.github.io/oldPortfolio/',
-      },
-      {
-        name: 'GitHub',
-        url: 'https://github.com/toukoum/portfolio',
-      },
-    ],
-    images: [
-      {
-        src: '/oldport1.png',
-        alt: 'Old Portfolio landing page',
-      },
-      {
-        src: '/oldport2.png',
-        alt: 'Old Portfolio projects',
-      }
-    ],
+    date: 'Jan 2022 - Jun 2022',
+    images: [{ src: '/jobs1.png', alt: 'Jobs portal dashboard' }],
   },
 ];
 
@@ -389,7 +130,7 @@ const ProjectContent = ({ project }: { project: ProjectProps }) => {
       {/* Links section */}
       {projectData.links && projectData.links.length > 0 && (
         <div className="mb-24">
-          <div className="px-6 mb-4 flex items-center gap-2">
+          <div className="mb-4 flex items-center gap-2 px-6">
             <h3 className="text-sm tracking-wide text-neutral-500 dark:text-neutral-400">
               Links
             </h3>
@@ -398,16 +139,16 @@ const ProjectContent = ({ project }: { project: ProjectProps }) => {
           <Separator className="my-4" />
           <div className="space-y-3">
             {projectData.links.map((link, index) => (
-                <a
+              <a
                 key={index}
                 href={link.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group bg-[#F5F5F7] flex items-center justify-between rounded-xl p-4 transition-colors hover:bg-[#E5E5E7] dark:bg-neutral-800 dark:hover:bg-neutral-700"
-                >
+                className="group flex items-center justify-between rounded-xl bg-[#F5F5F7] p-4 transition-colors hover:bg-[#E5E5E7] dark:bg-neutral-800 dark:hover:bg-neutral-700"
+              >
                 <span className="font-light capitalize">{link.name}</span>
                 <ChevronRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-                </a>
+              </a>
             ))}
           </div>
         </div>
