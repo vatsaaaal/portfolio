@@ -7,11 +7,11 @@ import { url } from 'inspector';
 // Enhanced project content array with all projects
 const PROJECT_CONTENT = [
   {
-    title: 'Jaisohn Patient Portal',
+    title: 'Jaisohn Website',
     description:
       'Developed a modernized web platform for the Philip Jaisohn Memorial Foundation, a nonprofit serving the elderly Asian community in the U.S. The platform improves donation processing, accessibility, and user engagement while maintaining a simple, easy-to-use interface. Integrated an AI-powered chatbot using Amazon Lex and SageMaker.',
     techStack: ['Django', 'HTML', 'AWS (EC2, S3)', 'Amazon Lex', 'SageMaker'],
-    date: 'Jan 2025 - Present',
+    date: '2025',
     links: [{ name: 'website', url: 'https://jaisohn.org/' }],
     images: [
       { src: '/jaisohn1.png', alt: 'Jaisohn landing page' },
@@ -23,7 +23,7 @@ const PROJECT_CONTENT = [
     description:
       'Built a Craigslist-style marketplace exclusively for Drexel students to buy, sell, and trade course materials, lab equipment, laptops, furniture, and other student essentials. Implemented secure login, real-time messaging, and a listing approval system.',
     techStack: ['React', 'Node.js', 'PostgreSQL', 'Socket.io'],
-    date: 'Aug 2024 - Dec 2024',
+    date: '2024',
     links: [{ name: 'website', url: 'https://dragon-craigslist.vercel.app/' }],
     images: [
       { src: '/dragons1.png', alt: 'Marketplace landing page' },
@@ -35,31 +35,47 @@ const PROJECT_CONTENT = [
     description:
       'Created a carpooling platform that connects travelers heading to the same destination or nearby locations. Allows users to post trips, join rides, chat, and split costs. Inspired by expensive airport-to-campus commutes.',
     techStack: ['Vite', 'React', 'Node.js', 'WebSockets', 'MongoDB', 'JWT'],
-    date: '2024 - Present',
+    date: '2024',
     links: [
       { name: 'website', url: 'https://dragon-rideshare.vatsaljain.lol/' },
     ],
     images: [{ src: '/pool1.png', alt: 'Rideshare app interface' }],
   },
   {
-    title: 'Hackathon Projects: Donator Pro / Farmer Hub',
+    title: 'Hackathon Project: Donator Pro',
     description:
-      'Donator Pro: Web platform connecting donors to centers with real-time inventory and impact metrics. Farmer Hub: AI-driven tools for crop disease detection and recommendations using MobileNetV2 and Leaflet maps.',
+      'Donator Pro: Web platform connecting donors to centers with real-time inventory and impact metrics.',
     techStack: ['Flask', 'React', 'TensorFlow.js', 'Leaflet', 'Postman'],
-    date: 'Mar 2023 - Sep 2023',
-    links: [{ name: 'devpost', url: 'https://devpost.com/vatsaaaal' }],
+    date: '2023',
+    links: [
+      { name: 'Details', url: 'https://devpost.com/vatsaaaal' },
+      {
+        name: 'github',
+        url: 'https://github.com/vatsaaaal/DonatorPro',
+      },
+    ],
     images: [
       { src: '/hackathon1.png', alt: 'Donator Pro interface' },
       { src: '/hackathon2.png', alt: 'Farmer Hub map' },
     ],
   },
   {
-    title: 'Twitch Translate - Real-Time Chat Translation Extension',
+    title: 'Hackathon Projects: Farmer Hub',
     description:
-      'Developing a Twitch extension that translates chat messages in real time, enabling multilingual engagement. Integrated with Twitch API and translation models.',
-    techStack: ['JavaScript', 'Twitch API', 'Translation Models'],
-    date: 'Feb 2025 - Present',
-    images: [{ src: '/twitch1.png', alt: 'Twitch chat extension' }],
+      'AI-driven tools for crop disease detection and recommendations using MobileNetV2 and Leaflet maps.',
+    techStack: ['Flask', 'React', 'TensorFlow.js', 'Leaflet', 'Postman'],
+    date: '2023',
+    links: [
+      { name: 'devpost', url: 'https://devpost.com/vatsaaaal' },
+      {
+        name: 'github',
+        url: 'https://github.com/vatsaaaal/FarmerPro',
+      },
+    ],
+    images: [
+      { src: '/hackathon1.png', alt: 'Donator Pro interface' },
+      { src: '/hackathon2.png', alt: 'Farmer Hub map' },
+    ],
   },
   {
     title: 'On-Campus Jobs Portal',
@@ -72,7 +88,7 @@ const PROJECT_CONTENT = [
       'Django REST Framework',
       'PostgreSQL',
     ],
-    date: 'Jan 2022 - Jun 2022',
+    date: '2022',
     images: [{ src: '/jobs1.png', alt: 'Jobs portal dashboard' }],
   },
 ];
@@ -181,57 +197,45 @@ const ProjectContent = ({ project }: { project: ProjectProps }) => {
 // Main data export with updated content
 export const data = [
   {
-    category: 'Startup Project',
-    title: 'Synto',
-    src: '/syntopreview.png',
-    content: <ProjectContent project={{ title: 'Synto' }} />,
+    category: 'Work Experience',
+    title: 'Website for PJMF',
+    src: '/jaisohn.png',
+    content: <ProjectContent project={{ title: 'Jaisohn Website' }} />,
   },
   {
-    category: 'Fun Tool',
-    title: 'Rrate',
-    src: '/ratepreview.png',
-    content: <ProjectContent project={{ title: 'Rrate' }} />,
+    category: 'Project',
+    title: "Dragon's Craigslist",
+    src: '/dc.png',
+    content: (
+      <ProjectContent
+        project={{ title: "Dragon's Craigslist - Drexel Student Marketplace" }}
+      />
+    ),
+  },
+  {
+    category: 'Project',
+    title: "Dragon's Rideshare",
+    src: '/dr.png',
+    content: (
+      <ProjectContent
+        project={{ title: 'PoolTogether - Rideshare Carpooling App' }}
+      />
+    ),
   },
   {
     category: 'Hackathon Winner',
-    title: 'Defai',
-    src: '/defaipreview.png',
-    content: <ProjectContent project={{ title: 'Defai' }} />,
+    title: 'Donator Pro',
+    src: '/dp.png',
+    content: (
+      <ProjectContent project={{ title: 'Hackathon Project: Donator Pro' }} />
+    ),
   },
   {
     category: 'Hackathon Winner',
-    title: 'Fitgear',
-    src: '/fitgearpreview.png',
-    content: <ProjectContent project={{ title: 'Fitgear' }} />,
-  },
-  {
-    category: 'Business Intelligence',
-    title: 'Datai',
-    src: '/dataipreview.png',
-    content: <ProjectContent project={{ title: 'Datai' }} />,
-  },
-  {
-    category: '42 Project',
-    title: '3d Pong Game',
-    src: '/transcendancepreview.png',
-    content: <ProjectContent project={{ title: '3d Pong Game' }} />,
-  },
-  {
-    category: '42 Project',
-    title: 'Minishell',
-    src: '/minishellpreview.png',
-    content: <ProjectContent project={{ title: 'Minishell' }} />,
-  },
-  {
-    category: 'Automation',
-    title: 'YouBot',
-    src: '/youbotpreview.png',
-    content: <ProjectContent project={{ title: 'YouBot' }} />,
-  },
-  {
-    category: 'Web Development',
-    title: 'Old Portfolio',
-    src: '/oldportfoliopreview.png',
-    content: <ProjectContent project={{ title: 'Old Portfolio' }} />,
+    title: 'Farmer Hub',
+    src: '/fh.png',
+    content: (
+      <ProjectContent project={{ title: 'Hackathon Projects: Farmer Hub' }} />
+    ),
   },
 ];

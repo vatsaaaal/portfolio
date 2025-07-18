@@ -12,7 +12,7 @@ export function Presentation() {
     location: 'Philadelphia, PA, USA',
     // Add a newline character after the emoji
     description:
-      "Hey 👋\nI'm Vatsal Jain, a Full Stack Developer and Software Engineering student at Drexel University. I specialize in building scalable web applications with technologies like Django, React, Node.js, and AWS. I've worked on projects like modernizing nonprofit websites and creating student marketplaces, and I'm passionate about problem-solving and innovation in tech.",
+      "Hey 👋\nI'm a passionate Full Stack Developer and Software Engineering student at Drexel University. I love building scalable web applications and solving real-world problems through technology. My journey in tech started with a curiosity for how things work, and now I'm focused on creating impactful solutions that make a difference.",
     src: '/profil-vatsal.png',
     fallbackSrc:
       'https://images.unsplash.com/photo-1610216705422-caa3fcb6d158?q=80&w=3560&auto=format&fit=crop&ixlib=rb-4.0.3',

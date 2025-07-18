@@ -1,70 +1,54 @@
-![image](assets/readme-photo.png)
- 
-# World's first AI portfolio 🤖✨  
+# Vatsal Jain's Portfolio
 
-**Static portfolios are dead.**  
-So I built [toukoum.fr](https://toukoum.fr).
+<!-- ![Portfolio Screenshot](./public/screenshot.png) Replace with an actual screenshot path if available -->
 
-Instead of making you scroll endlessly, my portfolio adapts to *you*.  
-Ask a question — my AI avatar replies instantly.
+Welcome to my personal portfolio website! This is a dynamic, AI-powered showcase of my work as a Full Stack Developer and Software Engineering student at Drexel University. Built with modern web technologies, it features an interactive chat interface, project highlights, skills, and more.
 
-## 👇 What can you ask?
+Live site: [vatsaljain.vercel.app](https://vatsaljain.vercel.app/)
 
-- 🧠 **Tech recruiter?** Ask about my stack & results  
-- 💻 **Dev?** Dive into my code & mindset  
-- 🧑‍🤝‍🧑 **Friend or family?** See what I’ve been working on  
+## About Me
 
----
+I'm Vatsal Jain, a 22-year-old full-stack developer specializing in scalable web apps, cloud infrastructure, and DevOps. Currently pursuing a BS in Software Engineering at Drexel University (expected graduation June 2025). Passionate about problem-solving, AI integration, and building user-focused solutions.
 
-This is not a portfolio.  
-It’s a **conversation tailored to your curiosity**.
+- **LinkedIn**: [linkedin.com/in/vatsaljain1](https://www.linkedin.com/in/vatsaljain1/)
+- **GitHub**: [github.com/vatsaaaal](https://github.com/vatsaaaal)
+- **Email**: jainvatsalxii@gmail.com
 
-➡️ **Try it now:** [https://toukoum.fr](https://toukoum.fr)  
-*What will you ask?*
+## Features
 
-## 🚀 How to run
+- **Interactive AI Chat**: Chat with my AI avatar for personalized insights into my background, projects, and skills.
+- **Project Showcase**: Detailed cards for key projects like Jaisohn Patient Portal, Dragons Rideshare, and Dragons Craigslist.
+- **Skills Section**: Categorized overview of my technical and soft skills.
+- **Resume Download**: Easy access to my latest resume.
+- **Contact Form**: Direct way to get in touch.
+- **Responsive Design**: Works seamlessly on desktop and mobile.
 
-Want to run this project locally? Here's what you need:
+## Tech Stack
 
-### Prerequisites
-- **Node.js** (v18 or higher)
-- **pnpm** package manager
-- **OpenAI API token** (for AI chat functionality)
-- **GitHub token** (for GitHub integration features)
+- **Frontend**: React, Next.js, Tailwind CSS, Framer Motion
+- **Backend**: Node.js, Express, Django
+- **Database**: PostgreSQL, MongoDB
+- **Cloud/DevOps**: AWS (EC2, S3, IAM), Docker, Kubernetes, GitHub Actions CI/CD
+- **AI Integration**: Amazon Lex, SageMaker, OpenAI tools
+- **Other**: Socket.io for real-time, Vercel/Hetzner for deployment
 
-### Setup
-1. **Clone the repository**
-   ```bash
-   git clone <your-repo-url>
-   cd portfolio
-   ```
+## Projects Highlight
 
-2. **Install dependencies**
-   ```bash
-   pnpm install
-   ```
+- **Jaisohn Patient Portal**: Modernized a nonprofit's WordPress site into a Django app with AWS deployment, AI chatbot, and accessibility features. [Live Site](https://jaisohn.org/)
+- **Dragons Rideshare**: Carpooling app for Drexel students with real-time chat, Google Maps integration, and secure backend. [Live Site](https://dragon-rideshare.vatsaljain.lol/)
+- **Dragons Craigslist**: Student marketplace for buying/selling essentials, with messaging and verification. [Live Site](https://dragon-craigslist.vercel.app/)
+- **Hackathon Projects**: Donator Pro and Farmer Hub – AI-driven tools for donations and agriculture, winning awards.
 
-3. **Environment variables**
-   Create a `.env` file in the root directory:
-   ```env
-   OPENAI_API_KEY=your_openai_api_key_here
-   GITHUB_TOKEN=your_github_token_here
-   ```
+For more, explore the site or check the code!
 
-4. **Run the development server**
-   ```bash
-   pnpm dev
-   ```
+## References
 
-5. **Open your browser**
-   Navigate to `http://localhost:3000`
+This project is forked from [toukoum/portfolio](https://github.com/toukoum/portfolio) and customized.
 
-### Getting your **tokens**
-- **OpenAI API Key**: Get it from [platform.openai.com](https://platform.openai.com/api-keys)
-- **GitHub Token**: Generate one at [github.com/settings/tokens](https://github.com/settings/personal-access-tokens) with repo access
+## Deployment
 
+Deployed on Vercel for seamless hosting.
 
+## Contact
 
-#### 🔖 Tags
-
-`#AIPortfolio` `#InnovationInTech` `#DigitalResume` `#JobSearch` `#TechInnovation` `#WebDevelopment` `#FutureTech`
+Reach out via [LinkedIn](https://www.linkedin.com/in/vatsaljain1/) or email at jainvatsalxii@gmail.com. Let's connect!

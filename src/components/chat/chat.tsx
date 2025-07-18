@@ -284,14 +284,6 @@ const Chat = () => {
             </div>
           }
         />
-        <div className="">
-          <GithubButton
-            animationDuration={1.5}
-            label="Star"
-            size={'sm'}
-            repoUrl="https://github.com/toukoum/portfolio"
-          />
-        </div>
       </div>
 
       {/* Fixed Avatar Header with Gradient */}
